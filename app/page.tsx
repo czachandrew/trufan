@@ -93,11 +93,11 @@ export default function Home() {
       icon: '👕',
       title: 'Seamless Merch Sales',
       tagline: 'Shop From Your Seat',
-      description: 'Don\'t let your fans miss the show waiting in line',
+      description: 'Don&apos;t let your fans miss the show waiting in line',
       highlights: [
         'Setup digital storefronts in minutes for on-site merchandise',
         'Order from your seat—delivered to you, your car, or pickup on exit',
-        'Don\'t miss the show waiting in line',
+        'Don&apos;t miss the show waiting in line',
         'Easy profit splits with Stripe handling all transactions'
       ],
       gradient: 'from-pink-500 to-rose-500',
@@ -126,6 +126,7 @@ export default function Home() {
       <div className="relative overflow-hidden">
         {/* Hero Background Image */}
         <div className="absolute inset-0">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src="https://images.unsplash.com/photo-1470229722913-7c0e2dbbafd3?w=1600&h=900&fit=crop&q=80"
             alt="Concert crowd with vibrant lighting"
@@ -374,7 +375,7 @@ export default function Home() {
                 <div className="text-center py-12">
                   <div className="text-8xl mb-6 animate-bounce">✓</div>
                   <h3 className="text-3xl font-bold text-white mb-4">Thank You!</h3>
-                  <p className="text-xl text-gray-400">We'll be in touch soon.</p>
+                  <p className="text-xl text-gray-400">We&apos;ll be in touch soon.</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -446,7 +447,7 @@ export default function Home() {
 
                   <div>
                     <label htmlFor="requestType" className="block text-sm font-medium text-gray-300 mb-2">
-                      I'm interested in *
+                      I&apos;m interested in *
                     </label>
                     <select
                       id="requestType"
