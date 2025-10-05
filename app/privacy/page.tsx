@@ -1,15 +1,17 @@
+import Link from 'next/link';
+
 export default function PrivacyPolicy() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900">
       {/* Navigation */}
       <nav className="relative z-10 container mx-auto px-6 py-6 border-b border-purple-500/20">
         <div className="flex items-center justify-between">
-          <a href="/" className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
+          <Link href="/" className="text-3xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">
             TruFan.ai
-          </a>
-          <a href="/" className="text-gray-400 hover:text-cyan-400 transition-colors">
+          </Link>
+          <Link href="/" className="text-gray-400 hover:text-cyan-400 transition-colors">
             ← Back to Home
-          </a>
+          </Link>
         </div>
       </nav>
 
